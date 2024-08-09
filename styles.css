@@ -51,6 +51,11 @@ button:hover {
 
 #productForm {
     margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
 }
 
 #productForm label {
@@ -60,9 +65,15 @@ button:hover {
 
 #productForm input, #productForm textarea {
     width: 100%;
-    padding: 0.5em;
+    padding: 10px;
     margin-top: 0.2em;
     border: 1px solid #ddd;
+    width: 80%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #productForm button {
@@ -84,6 +95,11 @@ button:hover {
     }
     
     #productForm input, #productForm textarea {
-        font-size: 0.8em; /* Tamaño de fuente reducido en campos del formulario */
+        font-size: 0.8em;
+        display: flex; 
+        flex-direction: column;/* Tamaño de fuente reducido en campos del formulario */
+        justify-content: center;
+        align-items: center;
+
     }
 }
