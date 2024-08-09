@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inventario de Productos</h1>
+    </header>
+    
+    <main>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se llenarán con JavaScript -->
+            </tbody>
+        </table>
+        <button id="addProductBtn">Agregar Producto</button>
+    </main>
+
+    <!-- Formulario para agregar o editar productos -->
+    <div id="productForm" style="display: none;">
+        <h2>Agregar/Editar Producto</h2>
+        <label for="code">Código:</label>
+        <input type="text" id="code" required>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="description">Descripción:</label>
+        <textarea id="description" required></textarea>
+        <label for="price">Precio:</label>
+        <input type="number" id="price" step="0.01" required>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" required>
+        <button id="saveProductBtn">Guardar</button>
+        <button id="cancelBtn">Cancelar</button>
+    </div>
+
+    <script src="inventory.js"></script>
+</body>
+</html>
